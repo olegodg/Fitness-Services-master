@@ -19,6 +19,6 @@ public class ServiceSpecifications {
     public static Specification<Service> nameLike(String titlePart) {
         return (root, criteriaQuery, criteriaBuilder) -> criteriaBuilder.like(root.get("title"), String.format("%%%s%%", titlePart));
     }
-
+/////
 
 }
